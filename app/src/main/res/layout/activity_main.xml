@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_degradado"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="40dp"
+        android:background="@color/blanco">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgLogo"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/vaca"
+            android:maxWidth="180dp"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtV_head"
+            android:layout_marginTop="30dp"
+            android:text="Vetgan App"
+            android:fontFamily="@font/lemonade"
+            android:textColor="#224524"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:layout_below="@id/imgLogo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_login"
+            android:text="Login"
+            android:backgroundTint="#3D692C"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="100dp"
+            android:layout_below="@id/txtV_head"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_register"
+            android:text="Registro"
+            android:backgroundTint="#3D692C"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/button_login"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

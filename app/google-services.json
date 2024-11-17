@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "603917428618",
+    "project_id": "vetganapp",
+    "storage_bucket": "vetganapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603917428618:android:8d36cbca9446ba04300a73",
+        "android_client_info": {
+          "package_name": "com.example.vetgan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhxfEp46tPh26848BS774w3oUtem2jpwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
