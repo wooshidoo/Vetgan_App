@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/fondo_degradado">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@color/blanco">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtV_login_head"
+            android:layout_marginTop="30dp"
+            android:text="Ingreso de Usuario"
+            android:textSize="40dp"
+            android:textColor="#224524"
+            android:fontFamily="@font/beach"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtV_login_email"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/txtV_login_head"
+            android:text="Correo"
+            android:padding="6dp"
+            android:textColor="#555555"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edText_login_email"
+            android:layout_below="@id/txtV_login_email"
+            android:hint="Ingrese su correo"
+            android:textColor="#000000"
+            android:inputType="textEmailAddress"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtV_login_pwd"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/edText_login_email"
+            android:text="Contraseña"
+            android:padding="6dp"
+            android:textColor="#555555"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edText_login_pwd"
+            android:layout_below="@id/txtV_login_pwd"
+            android:hint="Ingrese su contraseña"
+            android:textColor="#000000"
+            android:inputType="textPassword"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:background="@drawable/border"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3D692C"
+            android:id="@+id/button_login"
+            android:layout_below="@id/edText_login_pwd"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:elevation="10dp"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
