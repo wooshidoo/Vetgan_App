@@ -61,11 +61,19 @@
             android:textColor="#555555"
             android:textSize="16sp"/>
 
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:id="@+id/imgV_show_hide_pwd"
+            android:layout_below="@id/txtV_login_pwd"/>
+
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/edText_login_pwd"
             android:layout_below="@id/txtV_login_pwd"
+            android:layout_marginStart="30dp"
             android:hint="Ingrese su contraseña"
             android:textColor="#000000"
             android:inputType="textPassword"

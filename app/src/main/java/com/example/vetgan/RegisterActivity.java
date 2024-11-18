@@ -57,31 +57,31 @@ public class RegisterActivity extends AppCompatActivity {
 
                 if(TextUtils.isEmpty(textName)){
                     Toast.makeText(RegisterActivity.this, "Porfavor, Ingrese su Nombre Completo", Toast.LENGTH_LONG).show();
-                    editTextRegisterName.setError("Full name is required");
+                    editTextRegisterName.setError("Nombre Completo Obligatorio");
                     editTextRegisterName.requestFocus();
                 } else if (TextUtils.isEmpty(textEmail)){
                     Toast.makeText(RegisterActivity.this, "Porfavor, Ingrese su Correo", Toast.LENGTH_LONG).show();
-                    editTextRegisterEmail.setError("Email is required");
+                    editTextRegisterEmail.setError("Correo Obligatorio");
                     editTextRegisterEmail.requestFocus();
                 } else if (!Patterns.EMAIL_ADDRESS.matcher(textEmail).matches()){
                     Toast.makeText(RegisterActivity.this, "Porfavor, re-ingrese su Correo", Toast.LENGTH_LONG).show();
-                    editTextRegisterEmail.setError("Valid email is required");
+                    editTextRegisterEmail.setError("Correo Válido Obligatorio");
                     editTextRegisterEmail.requestFocus();
                 } else if(TextUtils.isEmpty(textPwd)){
                     Toast.makeText(RegisterActivity.this, "Porfavor, Ingrese su Clave", Toast.LENGTH_LONG).show();
-                    editTextRegisterPwd.setError("Password is required");
+                    editTextRegisterPwd.setError("Clave Obligatoria");
                     editTextRegisterPwd.requestFocus();
                 } else if(textPwd.length() < 6){
                     Toast.makeText(RegisterActivity.this, "La Clave debe tener 6 Digitos como Minimo", Toast.LENGTH_LONG).show();
-                    editTextRegisterPwd.setError("Password too weak");
+                    editTextRegisterPwd.setError("Clave Débil");
                     editTextRegisterPwd.requestFocus();
                 } else if(TextUtils.isEmpty(textConfirmPwd)){
                     Toast.makeText(RegisterActivity.this, "Confirma tu clave", Toast.LENGTH_LONG).show();
-                    editTextRegisterConfirmPwd.setError("Password confirmation is required");
+                    editTextRegisterConfirmPwd.setError("Clave Obligatoria");
                     editTextRegisterConfirmPwd.requestFocus();
                 } else if(!textPwd.equals(textConfirmPwd)){
                     Toast.makeText(RegisterActivity.this, "Ingrese la misma clave", Toast.LENGTH_LONG).show();
-                    editTextRegisterConfirmPwd.setError("Password confirmation is required");
+                    editTextRegisterConfirmPwd.setError("Clave Obligatoria");
                     editTextRegisterConfirmPwd.requestFocus();
                     //LIMPIAR CONTRASEÑA INGRESADA
                     editTextRegisterPwd.clearComposingText();
