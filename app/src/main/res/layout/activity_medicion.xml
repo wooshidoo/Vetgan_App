@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedicionActivity"
+    android:background="@drawable/fondo_degradado">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@color/blanco">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtV_medicion_head"
+            android:layout_marginTop="30dp"
+            android:text="Panel de Mediciones"
+            android:textSize="40dp"
+            android:textColor="#224524"
+            android:fontFamily="@font/beach"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtV_TipoAnimal"
+            android:layout_below="@id/txtV_medicion_head"
+            android:text="   Tipo de Animal"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:layout_marginTop="50dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spTipoAnimal"
+            android:layout_below="@id/txtV_TipoAnimal"
+            android:padding="6dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_Mostrar"
+            android:text="Mostrar Información"
+            android:backgroundTint="#3D692C"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_below="@id/spTipoAnimal"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInfoAnimal"
+            android:layout_below="@id/button_Mostrar"
+            android:text=""
+            android:hint="Información del animal"
+            android:background="#D3D3D3"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:gravity="start|top"
+            android:padding="70dp"
+            android:layout_marginTop="50dp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

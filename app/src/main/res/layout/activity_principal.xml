@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/constraintLayout"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="60dp">
 
         <TextView
             android:layout_width="0dp"
@@ -54,6 +54,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:id="@+id/medicionCard"
+                app:cardBackgroundColor="@color/blanco"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 app:cardElevation="20dp"
@@ -94,6 +95,7 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 app:cardElevation="20dp"
+                app:cardBackgroundColor="@color/blanco"
                 app:cardCornerRadius="20dp">
 
                 <RelativeLayout
@@ -140,9 +142,10 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:id="@+id/listaCard"
+                android:id="@+id/RegistroCard"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
+                app:cardBackgroundColor="@color/blanco"
                 app:cardElevation="20dp"
                 app:cardCornerRadius="20dp">
 
@@ -177,9 +180,10 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:id="@+id/registroCard"
+                android:id="@+id/listaCard"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
+                app:cardBackgroundColor="@color/blanco"
                 app:cardElevation="20dp"
                 app:cardCornerRadius="20dp">
 
@@ -206,9 +210,45 @@
                         android:src="@drawable/ic_lista"
                         android:layout_marginTop="15dp"
                         android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/logoutCard"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/blanco"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/logoutName"
+                        android:text="Cerrar Sesión"
+                        android:textSize="20sp"
+                        android:textColor="#224524"
+                        android:fontFamily="@font/beach"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/logoutImage"/>
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/logoutImage"
+                        android:src="@drawable/ic_logout"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"/>
 
                 </RelativeLayout>
+
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
